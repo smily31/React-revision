@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Input extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.inputRef = React.createRef()
-    }
+  constructor(props) {
+    super(props);
 
-    focusInput(){
-        this.inputRef.current.focus()
-    }
-    
+    this.inputRef = React.createRef();
+  }
+
+  focusInput() {
+    this.inputRef.current.focus();
+  }
+
   render() {
     return (
       <>
-        <input type='text' ref={this.inputRef}/>
+        <input type="text" ref={this.inputRef} />
       </>
-    )
+    );
   }
 }
 
-export default Input
+export default Input;

@@ -13,6 +13,7 @@ import FocusInput from "./components/FocusInput";
 import FormComponent from "./components/FormComponent";
 import FunctionClick from "./components/FunctionClick";
 import Greet from "./components/Greet"; // named import
+import HTTPPostList from "./components/HTTPPostList";
 import Hero from "./components/Hero";
 import HoverCount from "./components/HoverCount";
 import HoverCounterTwo from "./components/HoverCounterTwo";
@@ -21,6 +22,7 @@ import NameList from "./components/NameList";
 import ParentComp from "./components/ParentComp";
 import ParentComponent from "./components/ParentComponent";
 import PortalDemo from "./components/PortalDemo";
+import PostForm from "./components/PostForm";
 import RefsComp from "./components/RefsComp";
 import User from "./components/User";
 import { UserProvider } from "./components/UserContext";
@@ -91,9 +93,12 @@ function App() {
       /> */}
 
       {/* Providing a context value */}
-      <UserProvider value='Ritika'>
+      {/* <UserProvider value='Ritika'>
         <ComponentC/>
-      </UserProvider>
+      </UserProvider> */}
+
+      {/* <HTTPPostList/> */}
+      <PostForm />
     </>
   );
 }

@@ -1,12 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const MemoComp = ({name}) => {
-    console.log('Memo Comp Render')
-  return (
-    <div>
-      {name}
-    </div>
-  )
-}
+const MemoComp = ({ name }) => {
+  console.log("Memo Comp Render");
+  return <div>{name}</div>;
+};
 
-export default React.memo(MemoComp)
+export default React.memo(MemoComp);

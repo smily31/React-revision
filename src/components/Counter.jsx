@@ -17,19 +17,22 @@ export default class Counter extends Component {
     //   }
     // );
     // console.log(this.state.count);
-    this.setState((prevState, props) => ({
-        count: prevState.count + 1
-    }), () => {
-        console.log('Callback count', this.state.count)
-    })
-    console.log(this.state.count)
+    this.setState(
+      (prevState, props) => ({
+        count: prevState.count + 1,
+      }),
+      () => {
+        console.log("Callback count", this.state.count);
+      }
+    );
+    console.log(this.state.count);
   }
-  incFive(){
-    this.increase()
-    this.increase()
-    this.increase()
-    this.increase()
-    this.increase()
+  incFive() {
+    this.increase();
+    this.increase();
+    this.increase();
+    this.increase();
+    this.increase();
   }
   render() {
     return (

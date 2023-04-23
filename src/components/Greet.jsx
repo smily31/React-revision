@@ -11,18 +11,18 @@ import React from "react";
 
 // JSX
 const Greet = (props) => {
-  const {name} = props
+  const { name } = props;
   return (
-      <div>
-          <h1>Hello {name}</h1>
-          {props.children}
-      </div>
-  )
-//   return React.createElement(
-//     "div",
-//     { id: "hello", className: "dummyClass" },
-//     React.createElement("h1", null, "Hello Sir")
-//   );
+    <div>
+      <h1>Hello {name}</h1>
+      {props.children}
+    </div>
+  );
+  //   return React.createElement(
+  //     "div",
+  //     { id: "hello", className: "dummyClass" },
+  //     React.createElement("h1", null, "Hello Sir")
+  //   );
 };
 
 export default Greet;

@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
-import FRInput from './FRInput'
+import React, { Component } from "react";
+import FRInput from "./FRInput";
 
 class FRParentInput extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.inputRef = React.createRef()
-    }
+  constructor(props) {
+    super(props);
 
-    clickHandle = () => {
-        this.inputRef.current.focus()
-    }
-    
+    this.inputRef = React.createRef();
+  }
+
+  clickHandle = () => {
+    this.inputRef.current.focus();
+  };
+
   render() {
     return (
       <>
-        <FRInput ref={this.inputRef}/>
+        <FRInput ref={this.inputRef} />
         <button onClick={this.clickHandle}>Click</button>
       </>
-    )
+    );
   }
 }
 
-export default FRParentInput
+export default FRParentInput;

@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class UserGreet extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         isLoggedIn: false
-      }
-    }
-    
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLoggedIn: false,
+    };
+  }
+
   render() {
-    // 4. Short circuit operator 
-    return this.state.isLoggedIn && <div>Hello Ritika</div>
+    // 4. Short circuit operator
+    return this.state.isLoggedIn && <div>Hello Ritika</div>;
 
     // 3. Ternary Operator
     /* return (
@@ -27,7 +27,7 @@ export default class UserGreet extends Component {
     }
     return <div>{message}</div>  */
 
-    // 1. if-else method 
+    // 1. if-else method
     /* if(this.state.isLoggedIn){
         return <div>Hello Ritika</div>
     }
@@ -37,8 +37,8 @@ export default class UserGreet extends Component {
 
     // return (
     //   <>
-    //    <div>Hello Ritika</div> 
-    //    <div>Hello Guest</div> 
+    //    <div>Hello Ritika</div>
+    //    <div>Hello Guest</div>
     //   </>
     // )
   }

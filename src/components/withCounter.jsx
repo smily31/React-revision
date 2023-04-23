@@ -1,6 +1,7 @@
 import React from "react";
 
-const withCounter = (WrappedComponent, incrementNumber) => {  // you can also pass parameter to hoc
+const withCounter = (WrappedComponent, incrementNumber) => {
+  // you can also pass parameter to hoc
   class WithCounter extends React.Component {
     constructor(props) {
       super(props);
@@ -22,7 +23,7 @@ const withCounter = (WrappedComponent, incrementNumber) => {  // you can also pa
         <WrappedComponent
           count={this.state.count}
           incrementCount={this.incrementCount}
-          {...this.props}   // to pass on propss
+          {...this.props} // to pass on propss
         />
       );
     }

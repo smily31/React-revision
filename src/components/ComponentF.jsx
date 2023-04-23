@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
-import { UserConsumer } from './UserContext'
+import React, { Component } from "react";
+import { UserConsumer } from "./UserContext";
 
 class ComponentF extends Component {
   render() {
     return (
-        // Consume the contest value
+      // Consume the contest value
       <UserConsumer>
-        {
-            (username) => {
-                return <h3>Hello {username}</h3>
-            }
-        }
+        {(username) => {
+          return <h3>Hello {username}</h3>;
+        }}
       </UserConsumer>
-    )
+    );
   }
 }
 
-export default ComponentF
+export default ComponentF;
